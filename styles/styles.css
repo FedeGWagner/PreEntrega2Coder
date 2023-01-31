@@ -120,7 +120,7 @@ h2 {
     background-color: #999;
 }
 .img-moto {
-    background-image: url(/img/moped.jpg);
+    background-image: url(../img/moped.jpg);
     height: 400px;
     background-size: cover;
     background-color: #000;
