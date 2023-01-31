@@ -15,8 +15,6 @@ html {
 }
 .navbar-brand {
     color: #fff !important;
-    /* font-weight: bold; */
-    /* font-size: 20px; */
 }
 span {
     color: orange;
@@ -66,9 +64,7 @@ main {
     text-align: center;
     border-radius: 5px;
 }
-/* .jumbotron p {
-    font-size: 20px;
-} */
+
 .botonera {
     height: 100px;
 }
