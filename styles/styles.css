@@ -1,0 +1,214 @@
+/* reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* barra navegacion */
+.navbar {
+    background-color: black;
+}
+.navbar a {
+    color: #fff;
+}
+.navbar-brand {
+    color: #fff !important;
+    /* font-weight: bold; */
+    /* font-size: 20px; */
+}
+span {
+    color: orange;
+}
+.navbar-toggler i {
+    color: #fff;
+    font-size: 25px;
+}
+.nav-item {
+    text-align: center;
+}
+.nav-item:hover {
+    background-color: orange;
+    transition: all .3s;
+}
+.dropdown-item {
+    background-color: orange;
+    color: #fff !important;
+    text-align: center;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    border: none;
+}
+.dropdown-item:hover {
+    background-color: rgb(199, 131, 5) !important;
+}
+.dropdown-item:active {
+    border: 1px solid #fff;
+}
+.dropdown-menu {
+    background-color: orange;
+}
+/* main */
+main {
+    height: 500px;
+    background-image: url(../img/Imagen2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* jumbotron */
+.jumbotron {
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.116);
+    background-position: right;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000000;
+    text-align: center;
+    border-radius: 5px;
+}
+/* .jumbotron p {
+    font-size: 20px;
+} */
+.botonera {
+    height: 100px;
+}
+.botonera a {
+    color: #fff;
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.botonera a:hover {
+    background-color: rgb(199, 131, 5);
+    transition: all .3s;
+}
+/* para cuando haces click en el boton */
+.botonera a:active {
+    border: 2px solid #fff;
+}
+h2 {
+    font-size: 20px;
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    background-color: rgb(216, 213, 213);
+}
+/* carousel */
+.carousel-item {
+    text-align: center;
+    background-color: rgb(216, 213, 213);
+}
+.carousel-item img {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.btn-primary {
+    background-color: #000;
+    border: #000;
+    margin-bottom: 20px;
+}
+.btn-primary:hover {
+    background-color: rgb(199, 131, 5) !important;
+    transition: all .3s !important;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    background-color: #333;
+    border-radius: 50%;
+}
+.carousel-indicators .active {
+    background-color: #999;
+}
+.img-moto {
+    background-image: url(/img/moped-1489854_1920.jpg);
+    height: 400px;
+    background-size: cover;
+    background-color: #000;
+    background-position: center
+}
+/* seccion restauracion */
+.titulo-moto {
+    background-color: rgb(209, 148, 35);
+    color: #fff;
+    padding: 20px;
+}
+.titulo-moto h3 {
+    text-align: center;
+    font-size: 20px;
+}
+.titulo-moto a {
+    /* text-align: center; */
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* footer */
+.f-redes {
+    background-color: #000;
+}
+.f-enlaces {
+    background-color: #000;
+}
+.f-enlaces ul li {
+    list-style: none;
+    text-decoration: none;
+}
+.f-enlaces a {
+    color: #fff;
+}
+.f-mapa {
+    background-color: #000;
+}
+h4 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+footer p {
+    margin-bottom: 10px;
+}
+footer i {
+    font-size: 25px;
+    letter-spacing: 25px;
+    color: orange;
+    margin-bottom: 10px;
+}
+.datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-contacto{
+    background-color: #fff;
+    padding-left: 0%;
+}
+.margin-top{
+    margin-top: 20px;
+}
+/* custom seleccion de texto */
+p::selection {
+    background-color: orange;
+    color: #000;
+}
+/* custom barra de navegacion */
+::-webkit-scrollbar {
+    background-color: #000;
+}
+::-webkit-scrollbar-track {
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(211, 181, 14, 0.733);
+    border-radius: 10px;
+}
