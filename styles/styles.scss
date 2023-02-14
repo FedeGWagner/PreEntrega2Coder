@@ -1,0 +1,199 @@
+// variables
+$color1: #000;
+$color2: #fff;
+$color3: orange;
+$color4: rgb(199, 131, 5);
+$color5: rgba(255, 255, 255, 0.116);
+$color6: rgb(216, 213, 213);
+$color7: #333;
+$color8: #999;
+$color9: rgb(209, 148, 35);
+$color10: rgba(211, 181, 14, 0.733);
+$color11: rgb(88, 58, 2);
+
+$altura: 500px;
+
+/* reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* barra navegacion */
+.navbar {
+    background-color: $color1;
+    a {
+        color: $color2;
+    }
+}
+.navbar-brand {
+    color: $color2;
+}
+span {
+    color: $color3;
+}
+.navbar-toggler i {
+    color: $color2;
+    font-size: 25px;
+}
+.nav-item {
+    text-align: center;
+    :hover {
+        background-color: $color3;
+        transition: all .3s;
+    }
+}
+.dropdown-item {
+    background-color: $color3;
+    color: $color2;
+    text-align: center;
+    border-radius: 0;
+    margin-bottom: 0;
+    border: none;
+    &:hover {
+        background-color: $color4;
+    }
+    &:active {
+        border: 1px solid $color2;
+    }
+}
+.dropdown-menu {
+    background-color: $color3;
+}
+/* main */
+main {
+    height: $altura;
+    background-image: url(../img/Imagen2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+/* jumbotron */
+.jumbotron {
+    height: $altura - 100;
+    background-color: $color5;
+    background-position: right;
+    color: $color2;
+    text-shadow: 1px 1px 2px $color1;
+    text-align: center;
+    border-radius: 5px;
+}
+.botonera {
+    height: $altura - 400;
+    a {
+        color: $color2;
+        text-decoration: none;
+        background-color: $color3;
+        padding: 10px 30px;
+        border-radius: 5px;
+        &:hover {
+            background-color: $color4;
+            transition: all .3s;
+        }
+        &:active {
+            border: 2px solid $color2;
+        }
+    }
+}
+h2 {
+    font-size: 20px;
+    text-align: left;
+    color: $color1;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    background-color: $color6;
+}
+
+// importacion de estilos de seccion carousel
+@import "_carousel";
+
+/* seccion restauracion */
+.titulo-moto {
+    background-color: $color9;
+    color: $color2;
+    padding: 20px;
+    h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    a {
+        color: $color2;
+        background-color: $color1;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        &:hover {
+            background-color: $color11;
+            transition: all .3s;
+        }
+        &:active {
+            border: 2px solid $color2;
+        }
+    }
+}
+/* footer */
+.f-redes {
+    background-color: $color1;
+}
+.f-enlaces {
+    background-color: $color1;
+    ul li {
+        list-style: none;
+        text-decoration: none;
+    }
+    a {
+        color: $color2;
+    }
+}
+.f-mapa {
+    background-color: $color1;
+}
+h4 {
+    text-align: center;
+}
+footer {
+    text-align: center;
+    font-size: 15px;
+    background-color: $color1;
+    color: $color2;
+    padding: 20px;
+    p {
+        margin-bottom: 10px;
+    }
+    i {
+        font-size: 25px;
+        letter-spacing: 25px;
+        color: $color3;
+        margin-bottom: 10px;
+    }
+}
+.datos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#titulo-contacto{
+    background-color: $color2;
+    padding-left: 0%;
+}
+.margin-top{
+    margin-top: 20px;
+}
+/* custom seleccion de texto */
+p::selection {
+    background-color: $color3;
+    color: $color1;
+}
+/* custom barra de navegacion */
+::-webkit-scrollbar {
+    background-color: $color1;
+}
+::-webkit-scrollbar-track {
+    background-color: $color1;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $color10;
+    border-radius: 10px;
+}
