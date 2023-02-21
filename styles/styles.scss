@@ -18,33 +18,42 @@ $altura: 500px;
     margin: 0;
     padding: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 /* barra navegacion */
 .navbar {
     background-color: $color1;
+
     a {
         color: $color2;
     }
 }
+
 .navbar-brand {
     color: $color2;
 }
+
 span {
     color: $color3;
 }
+
 .navbar-toggler i {
     color: $color2;
     font-size: 25px;
 }
+
 .nav-item {
     text-align: center;
+
     :hover {
         background-color: $color3;
         transition: all .3s;
     }
 }
+
 .dropdown-item {
     background-color: $color3;
     color: $color2;
@@ -52,16 +61,20 @@ span {
     border-radius: 0;
     margin-bottom: 0;
     border: none;
+
     &:hover {
         background-color: $color4;
     }
+
     &:active {
         border: 1px solid $color2;
     }
 }
+
 .dropdown-menu {
     background-color: $color3;
 }
+
 /* main */
 main {
     height: $altura;
@@ -69,6 +82,7 @@ main {
     background-size: cover;
     background-position: center;
 }
+
 /* jumbotron */
 .jumbotron {
     height: $altura - 100;
@@ -79,24 +93,29 @@ main {
     text-align: center;
     border-radius: 5px;
 }
+
 .botonera {
     height: $altura - 400;
+
     a {
         color: $color2;
         text-decoration: none;
         background-color: $color3;
         padding: 10px 30px;
         border-radius: 5px;
+
         &:hover {
             background-color: $color4;
             transition: all .3s;
         }
+
         &:active {
             border: 2px solid $color2;
         }
     }
 }
-h2 {
+
+.h2__index {
     font-size: 20px;
     text-align: left;
     color: $color1;
@@ -114,54 +133,71 @@ h2 {
     background-color: $color9;
     color: $color2;
     padding: 20px;
+
     h3 {
         text-align: center;
         font-size: 20px;
     }
+
     a {
         color: $color2;
         background-color: $color1;
         padding: 10px 20px;
         text-decoration: none;
         border-radius: 5px;
+
         &:hover {
             background-color: $color11;
             transition: all .3s;
         }
+
         &:active {
             border: 2px solid $color2;
         }
     }
 }
+
+.p__restauracion{
+    font-size: 20px;
+}
+
 /* footer */
 .f-redes {
     background-color: $color1;
 }
+
 .f-enlaces {
     background-color: $color1;
+
     ul li {
         list-style: none;
         text-decoration: none;
     }
+
     a {
         color: $color2;
     }
 }
+
 .f-mapa {
     background-color: $color1;
 }
+
 h4 {
     text-align: center;
 }
+
 footer {
     text-align: center;
     font-size: 15px;
     background-color: $color1;
     color: $color2;
     padding: 20px;
+
     p {
         margin-bottom: 10px;
     }
+
     i {
         font-size: 25px;
         letter-spacing: 25px;
@@ -169,30 +205,153 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 .datos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#titulo-contacto{
-    background-color: $color2;
-    padding-left: 0%;
-}
-.margin-top{
+
+.margin-top {
     margin-top: 20px;
 }
+
+/* estilos pagina contacto */
+.fondo-contacto {
+    background-image: url(../img/fondo-naranja.jpg);
+    background-attachment: fixed;
+}
+#titulo-contacto {
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 0%;
+    margin-top: 20px;
+}
+
+.boton-restauracion {
+    display: inline-block;
+}
+
+
+/* estilos del accordion */
+#accordion {
+    margin: 20px;
+    text-align: center;
+}
+.lista-accordion {
+    list-style: none;
+}
+.lista-accordion ul li span {
+    text-transform: uppercase;
+}
+.card-link {
+    color: #000;
+}
+.card-link:hover {
+    color: orange;
+}
+
+// estilos paginas modelos de motos
+.h2-pag-motos {
+    background-color: rgba(255, 255, 255, 0);
+    text-transform: none;
+}
+.fondo-modelos{
+    background-color: #e7e5e5;
+}
+
+/* estilos galeria */
+.fondo-galeria{
+    background-color: #e7e5e5;
+}
+#galeria{
+    margin-bottom: 25px;
+}
+#galeria .col-lg-4 {
+    margin: 0 !important;
+    padding: 25px;
+}
+#galeria img {
+    width: 100%;
+    height: 250px;
+    box-sizing: border-box;
+}
+.foto__galeria {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.foto__galeria::before {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(255, 166, 0, 0.568);
+    transform: scale(0);
+    transition: transform .4s;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.foto__galeria:hover::before {
+    transform: scale(1) rotate(360deg);
+}
+.foto__galeria--img1::before {
+    content: "BMW R100 RS";
+}
+.foto__galeria--img2::before {
+    content: "BMW R 11";
+}
+.foto__galeria--img3::before {
+    content: "BENELLI Tornado 650";
+}
+.foto__galeria--img4::before {
+    content: "INDIAN CHIEF";
+}
+.foto__galeria--img5::before {
+    content: "BSA 650 A65SS";
+}
+.foto__galeria--img6::before {
+    content: "TRIUMPH 650 T120";
+}
+.foto__galeria--img7::before {
+    content: "HONDA C71";
+}
+.foto__galeria--img8::before {
+    content: "ROYAL ENFIELD Bullet 500";
+}
+.foto__galeria--img9::before {
+    content: "ROYEL ENFIELD Continental";
+}
+/* estilos nosotros */
+.fondo-nosotros{
+    background-color: #e7e5e5;
+}
+.img__nosotros {
+    transform: scale(1);
+    transition: transform 0.5s ease-in-out;
+}
+.img__nosotros:hover {
+    transform: scale(1.1);
+}
+
 /* custom seleccion de texto */
 p::selection {
     background-color: $color3;
     color: $color1;
 }
+
 /* custom barra de navegacion */
 ::-webkit-scrollbar {
     background-color: $color1;
 }
+
 ::-webkit-scrollbar-track {
     background-color: $color1;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: $color10;
     border-radius: 10px;

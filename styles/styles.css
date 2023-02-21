@@ -93,7 +93,7 @@ main {
   border: 2px solid #fff;
 }
 
-h2 {
+.h2__index {
   font-size: 20px;
   text-align: left;
   color: #000;
@@ -168,6 +168,10 @@ h2 {
   border: 2px solid #fff;
 }
 
+.p__restauracion {
+  font-size: 20px;
+}
+
 /* footer */
 .f-redes {
   background-color: #000;
@@ -215,13 +219,151 @@ footer i {
   align-items: center;
 }
 
-#titulo-contacto {
-  background-color: #fff;
-  padding-left: 0%;
-}
-
 .margin-top {
   margin-top: 20px;
+}
+
+/* estilos pagina contacto */
+.fondo-contacto {
+  background-image: url(../img/fondo-naranja.jpg);
+  background-attachment: fixed;
+}
+
+#titulo-contacto {
+  background-color: rgba(0, 0, 0, 0);
+  padding-left: 0%;
+  margin-top: 20px;
+}
+
+.boton-restauracion {
+  display: inline-block;
+}
+
+/* estilos del accordion */
+#accordion {
+  margin: 20px;
+  text-align: center;
+}
+
+.lista-accordion {
+  list-style: none;
+}
+
+.lista-accordion ul li span {
+  text-transform: uppercase;
+}
+
+.card-link {
+  color: #000;
+}
+
+.card-link:hover {
+  color: orange;
+}
+
+.h2-pag-motos {
+  background-color: rgba(255, 255, 255, 0);
+  text-transform: none;
+}
+
+.fondo-modelos {
+  background-color: #e7e5e5;
+}
+
+/* estilos galeria */
+.fondo-galeria {
+  background-color: #e7e5e5;
+}
+
+#galeria {
+  margin-bottom: 25px;
+}
+
+#galeria .col-lg-4 {
+  margin: 0 !important;
+  padding: 25px;
+}
+
+#galeria img {
+  width: 100%;
+  height: 250px;
+  box-sizing: border-box;
+}
+
+.foto__galeria {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.foto__galeria::before {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgba(255, 166, 0, 0.568);
+  transform: scale(0);
+  transition: transform 0.4s;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.foto__galeria:hover::before {
+  transform: scale(1) rotate(360deg);
+}
+
+.foto__galeria--img1::before {
+  content: "BMW R100 RS";
+}
+
+.foto__galeria--img2::before {
+  content: "BMW R 11";
+}
+
+.foto__galeria--img3::before {
+  content: "BENELLI Tornado 650";
+}
+
+.foto__galeria--img4::before {
+  content: "INDIAN CHIEF";
+}
+
+.foto__galeria--img5::before {
+  content: "BSA 650 A65SS";
+}
+
+.foto__galeria--img6::before {
+  content: "TRIUMPH 650 T120";
+}
+
+.foto__galeria--img7::before {
+  content: "HONDA C71";
+}
+
+.foto__galeria--img8::before {
+  content: "ROYAL ENFIELD Bullet 500";
+}
+
+.foto__galeria--img9::before {
+  content: "ROYEL ENFIELD Continental";
+}
+
+/* estilos nosotros */
+.fondo-nosotros {
+  background-color: #e7e5e5;
+}
+
+.img__nosotros {
+  transform: scale(1);
+  transition: transform 0.5s ease-in-out;
+}
+
+.img__nosotros:hover {
+  transform: scale(1.1);
 }
 
 /* custom seleccion de texto */
