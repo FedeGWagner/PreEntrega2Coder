@@ -367,10 +367,6 @@ footer i {
 }
 
 /* custom seleccion de texto */
-p::-moz-selection {
-  background-color: orange;
-  color: #000;
-}
 p::selection {
   background-color: orange;
   color: #000;
